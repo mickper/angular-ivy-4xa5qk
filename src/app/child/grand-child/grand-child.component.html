@@ -1,0 +1,11 @@
+<p>grand-child works!</p>
+
+<p *ngFor="let user of usersService.users">
+  #{{ user.id }} - {{ user.firstname }} {{ user.lastname.toUpperCase() }}
+</p>
+
+<input type="text" [(ngModel)]="usersService.users[0].firstname" />
+
+<hr />
+
+<app-grand-grand-child></app-grand-grand-child>

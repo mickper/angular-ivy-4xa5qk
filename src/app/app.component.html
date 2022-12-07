@@ -1,0 +1,9 @@
+<p>Start editing to see some magic happen :)</p>
+
+<p *ngFor="let user of usersService.users">
+  #{{ user.id }} - {{ user.firstname }} {{ user.lastname.toUpperCase() }}
+</p>
+
+<hr />
+
+<app-child></app-child>
